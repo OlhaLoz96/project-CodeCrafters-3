@@ -1,3 +1,43 @@
 .feedbacks {
   background-color: peru;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.feedbacks-title {
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.feedbacks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* margin-bottom: 32px; */
+}
+
+.stars {
+  gap: 4px;
+}
+
+.star {
+  fill: #75d281;
+}
+
+.star.black {
+  fill: #030a06;
+}
+
+.feedbacks-text {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin: 12px 0;
+}
+
+.feedbacks-author {
+  font-weight: 600;
 }
