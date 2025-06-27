@@ -1,31 +1,33 @@
 <section class="contacts">
-    <container class="container">
-        <div class="content">
-            <div class="content-section-top">
-                <h2 class="content-title">Залишились питання? Зв'яжіться з нами!</h2>
-                <p class="content-text">Ми тут, щоб допомогти!</p>
+    <div class="container">
+        <div class="contacts-wrapper">
+            <div class="content">
+                <div class="content-section-top">
+                    <h2 class="content-title">Залишились питання? Зв'яжіться з нами!</h2>
+                    <p class="content-text">Ми тут, щоб допомогти!</p>
+                </div>
+                <form class="content-form">
+                    <div class="content-form-item">
+                        <label class="form-title" for="username">Ім'я</label>
+                        <input class="form-input" type="text" id="username" name="username" placeholder="Іван" required>
+                    </div>
+                    <div class="content-form-item">
+                        <label class="form-title" for="email">Електронна пошта</label>
+                        <input class="form-input" type="email" id="email" name="email" placeholder="hello@ecotote.com" required>
+                    </div>
+                    <div class="content-form-item">
+                        <label  class="form-title" for="comments">Повідомлення</label>
+                        <textarea class="form-input form-comment" id="comments" name="comments" placeholder="Введіть своє повідомлення..." required></textarea>
+                    </div>
+                    <button class="content-form-btn" type="submit">Надіслати</button>
+                </form>
             </div>
-            <form class="content-form">
-                <div class="content-form-item">
-                    <label class="form-title" for="username">Ім'я</label>
-                    <input class="form-input" type="text" id="username" name="username" placeholder="Іван" required>
-                </div>
-                <div class="content-form-item">
-                    <label class="form-title" for="email">Електронна пошта</label>
-                    <input class="form-input" type="email" id="email" name="email" placeholder="hello@ecotote.com" required>
-                </div>
-                <div class="content-form-item">
-                    <label  class="form-title" for="comments">Повідомлення</label>
-                    <textarea class="form-input form-comment" id="comments" name="comments" placeholder="Введіть своє повідомлення..." required></textarea>
-                </div>
-                <button class="content-form-btn" type="submit">Надіслати</button>
-            </form>
+            <picture>
+                <source media="(min-width: 1440px)" srcset="../img/contacts-img/contacts-img-main.jpg 1x, ../img/contacts-img/contacts-img-main-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/contacts-img/contacts-img-tablet.jpg 1x, ../img/contacts-img/contacts-img-tablet-2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="../img/contacts-img/contacts-img-mobile.jpg 1x, ../img/contacts-img/contacts-img-mobile-2x.jpg 2x">
+                <img width="645" height="768" src="../img/contacts-img/contacts-img-mobile.jpg" alt="contacts-img" class="contacts-img">
+            </picture>
         </div>
-        <picture>
-            <source media="(max-width: 767px)" srcset="../img/contacts-img/contacts-img-mobile.jpg 1x, ../img/contacts-img/contacts-img-mobile-2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="../img/contacts-img/contacts-img-tablet.jpg 1x, ../img/contacts-img/contacts-img-tablet-2x.jpg 2x">
-            <source media="(min-width: 1440px)" srcset="../img/contacts-img/contacts-img-main.jpg 1x, ../img/contacts-img/contacts-img-main-2x.jpg 2x">
-            <img width="645" height="768" src="../img/contacts-img/contacts-img-mobile.jpg" alt="contacts-img" class="contacts-img">
-        </picture>
-    </container>
+    </div>
 </section>
