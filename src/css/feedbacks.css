@@ -58,7 +58,7 @@
   }
 
   .feedbacks-item {
-    width: 340px;
+    width: calc((100% - 24px) / 2);
   }
 
   .feedbacks-text {
