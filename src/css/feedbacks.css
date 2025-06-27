@@ -14,11 +14,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* margin-bottom: 32px; */
 }
 
 .stars {
+  display: flex;
   gap: 4px;
+  padding-top: 0;
+  height: 20px;
 }
 
 .star {
@@ -40,4 +42,26 @@
 
 .feedbacks-author {
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .feedbacks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 32px;
+  }
+
+  .feedbacks-item {
+    width: 340px;
+  }
+
+  .feedbacks-text {
+    margin: 24px 0;
+  }
 }
