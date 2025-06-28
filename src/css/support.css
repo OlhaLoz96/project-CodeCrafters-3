@@ -76,7 +76,8 @@ support {
     outline: none;
 }
 
-.support-form-input:hover:invalid {
+.support-form-input:hover:invalid,
+.support-form-input:focus:invalid {
     color: #d64040;
     border: 1px solid #d64040;
     background: rgba(3, 10, 6, 0.05);
