@@ -1,2 +1,43 @@
 .advantages {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.advantages-wrapper {
+}
+.container {
+}
+.advantages-accent-text {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.advantages-title {
+  font-family: 'Comfortaa', sans-serif;
+  margin-bottom: 20px;
+}
+.title {
+}
+.advantages-text {
+  margin-bottom: 48px;
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.advantages-item {
+}
+.advantages-img {
+  margin-bottom: 8px;
+}
+.advantages-subtitle {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.advantages-points {
 }
