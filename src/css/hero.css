@@ -1,9 +1,6 @@
-.hero-container {
+.hero {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-.hero-break {
-  display: none;
 }
 .hero-title {
   font-family: 'Comfortaa', sans-serif;
@@ -12,15 +9,9 @@
   margin-bottom: 20px;
 }
 .hero-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
   margin-bottom: 24px;
 }
 .hero-btn {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
   color: #fff;
   display: flex;
   align-items: center;
@@ -40,18 +31,17 @@
   opacity: 0.6;
 }
 @media screen and (min-width: 768px) {
-  .hero-container {
+  .hero {
     padding-top: 32px;
   }
   .hero-cover {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
     gap: 24px;
   }
   .hero-title {
-    font-size: 40px;
     margin: 0;
+    max-width: 340px;
   }
   .hero-text {
     font-size: 18px;
@@ -65,6 +55,7 @@
 @media screen and (min-width: 1440px) {
   .hero-cover {
     gap: 32px;
+    justify-content: space-between;
   }
   .hero-title {
     font-size: 56px;
