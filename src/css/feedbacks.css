@@ -1,5 +1,4 @@
-.feedbacks {
-  background-color: peru;
+.container {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -16,11 +15,11 @@
   gap: 40px;
 }
 
-.stars {
+.stars-list {
   display: flex;
   gap: 4px;
   padding-top: 0;
-  height: 20px;
+  height: 19px;
 }
 
 .star {
@@ -45,7 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .feedbacks {
+  .container {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -67,7 +66,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .feedbacks {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
