@@ -1,3 +1,77 @@
 .feedbacks {
-  background-color: peru;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.feedbacks-title {
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.feedbacks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.stars-list {
+  display: flex;
+  gap: 4px;
+  height: 19px;
+}
+
+.star {
+  fill: #75d281;
+}
+
+.star.black {
+  fill: #030a06;
+}
+
+.feedbacks-text {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin: 12px 0;
+}
+
+.feedbacks-author {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .feedbacks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 32px;
+  }
+
+  .feedbacks-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .feedbacks-text {
+    margin: 24px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedbacks-title {
+    font-size: 48px;
+    margin: 0 auto 80px;
+    max-width: 560px;
+  }
+
+  .feedbacks-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
