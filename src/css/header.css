@@ -105,11 +105,7 @@
 
 .button-close {
   position: absolute;
-<<<<<<< Updated upstream
-  right: 35px;
-=======
   right: 17px;
->>>>>>> Stashed changes
   top: 22px;
 }
 
@@ -123,17 +119,11 @@
     padding-bottom: 32px;
   }
   .mobal-nav {
-<<<<<<< Updated upstream
- 
-  width: 15%;
-}
-=======
   width: 15%;
 }
 .button-close {
   right: 30px;
 }
->>>>>>> Stashed changes
 }
 
 @media (min-width: 1440px) {
