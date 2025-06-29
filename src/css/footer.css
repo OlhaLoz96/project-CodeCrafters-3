@@ -101,6 +101,7 @@
     margin-bottom: 0;
   }
 }
+
 .footer-nav-link {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
@@ -109,6 +110,12 @@
   color: #030a06;
   text-decoration: none;
 }
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #113916;
+  opacity: 0.6;
+  }
 
 .footer-media {
   list-style: none;
@@ -119,6 +126,21 @@
   gap: 12px;
   margin: 0;
  }
+
+.footer-media-link {
+ font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  text-decoration: none; 
+}
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+  color: #113916;
+  opacity: 0.6;
+  }
 
  address {
   font-style: normal;
@@ -151,6 +173,13 @@
   line-height: 1.6;
   color: #030a06;
 }
+
+.item-contacts:hover,
+.item-contacts:focus {
+  color: #113916;
+  opacity: 0.6;
+  }
+
 
 .footer-down  {
   list-style: none;
