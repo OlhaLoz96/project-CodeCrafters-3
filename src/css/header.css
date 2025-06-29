@@ -20,6 +20,7 @@
 .nav-item-link:hover,
 .nav-item-link:focus { 
   color:#113916;
+  opacity: 0.6;
 }
 
 .button-menu {
@@ -93,8 +94,10 @@
   flex-direction: column;
   gap: 32px;
 }
-.nav-item-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.nav-item-link,
+.address-item-link{
+  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-adress-list {
   padding-top: 32px;
