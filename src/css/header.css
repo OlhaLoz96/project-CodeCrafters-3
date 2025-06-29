@@ -1,38 +1,45 @@
 .header {
-  background-color: #75D281;
+  background-color: #75d281;
 }
-.center_nav {
+.wrap-header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-nav {
   padding-top: 5px;
-  padding-left:4px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
-  width: 100%;
 }
-/* ========================== */
+
+.address-item-link:hover,
+.address-item-link:focus,
+.nav-item-link:hover,
+.nav-item-link:focus { 
+  color:#113916;
+}
 
 .button-menu {
   background-color: transparent;
-  /* INFO властивість "outline" майже дублює "border" але невпливає на розмір кнопки  ----  незрозуміло навіщо воно тут */
   outline: none;
   border: none;
 }
 
-.header_nav {
+.header-nav {
+  padding-left: 185px;
   display: none;
-  gap: 40px;
+  gap: 32px;
 }
 
 /* --------header address--------- */
-
 .address {
   display: none;
   font-style: normal;
 }
 /* -----------mobal menu -----------*/
-
 
 .mobal-menu-backdrop {
   position: fixed;
@@ -41,13 +48,9 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  /* для плавного появлення меню */
   opacity: 0;
-  /* приховує блок але залишає його в потоці а в парі з position: fixed;чи (absolute) він спливає над потоком*/
   visibility: hidden;
-  /* щоб не можливо було взаємодіяти з прихованими кнопками */
   pointer-events: none;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -64,35 +67,77 @@
   border-radius: 4px;
   width: 100%;
   height: 100vh;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #75D281;
+  background: #75d281;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 20px;
-}
-.mobal-logo {
-  height: 64px;
-padding-top: 5px;
-  padding-right: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.mobal_nav {
-  padding-top: 32px;
+.wrap-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+
+.mobal-nav {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.mobal-nav-list {
+  padding-top: 50px;
   padding-bottom: 64px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.mobal-nav-address{
+.nav-item-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-adress-list {
   padding-top: 32px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 16px;
+}
 
+.button-close {
+  position: absolute;
+  right: 35px;
+  top: 22px;
+}
 
+/* -------------------new-------------- */
+
+@media (min-width: 768px) {
+  .wrap-menu {
+    padding-left: 32px;
+  }
+  .mobal-nav-list {
+    padding-bottom: 32px;
+  }
+  .mobal-nav {
+ 
+  width: 15%;
+}
+}
+
+@media (min-width: 1440px) {
+  .header-nav {
+    display: flex;
+  }
+  .address {
+    display: block;
+  }
+  .header-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .button-menu {
+    display: none;
+  }
 }
