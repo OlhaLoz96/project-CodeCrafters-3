@@ -23,7 +23,7 @@
     />
 
     <script type="module" crossorigin src="/project-CodeCrafters-3/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CodeCrafters-3/assets/index-uxpTnpre.css">
+    <link rel="stylesheet" crossorigin href="/project-CodeCrafters-3/assets/index-Di-L4zHL.css">
   </head>
   <body>
     <header class="header">header</header>
@@ -564,8 +564,32 @@
   </div>
 </section>
 
-      <section class="support">support</section>
-
+      <section class="support section" id="support">
+    <div class="container support-wrapper">
+        <div class="support-contents">
+            <div class="support-section-top">
+                <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+                <h3 class="support-text">Ми тут, щоб допомогти!</h3>
+            </div>
+            <form class="support-form">
+                <div class="support-form-item">
+                    <label class="support-form-title" for="username">Ім'я</label>
+                    <input class="support-form-input" type="text" id="username" name="username" placeholder="Іван" required minlength="5" maxlength="64">
+                </div>
+                <div class="support-form-item">
+                    <label class="support-form-title" for="email">Електронна пошта</label>
+                    <input class="support-form-input" type="email" id="email" name="email" placeholder="hello@ecotote.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$" required>
+                </div>
+                <div class="support-form-item">
+                    <label  class="support-form-title" for="comments">Повідомлення</label>
+                    <textarea class="support-form-input support-form-comment" id="comments" name="comments" placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
+                </div>
+                <button class="support-form-btn" type="submit">Надіслати</button>
+            </form>
+        </div>
+        <div class="support-img"></div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">footer</footer>
