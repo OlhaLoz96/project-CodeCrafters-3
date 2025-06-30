@@ -1,33 +1,31 @@
 <section class="support section" id="support">
-    <div class="container">
-        <div class="support-wrapper">
-            <div class="support-contents">
-                <div class="support-section-top">
-                    <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
-                    <p class="support-text">Ми тут, щоб допомогти!</p>
-                </div>
-                <form class="support-form">
-                    <div class="support-form-item">
-                        <label class="support-form-title" for="username">Ім'я</label>
-                        <input class="support-form-input" type="text" id="username" name="username" placeholder="Іван" required minlength="5" maxlength="65">
-                    </div>
-                    <div class="support-form-item">
-                        <label class="support-form-title" for="email">Електронна пошта</label>
-                        <input class="support-form-input" type="email" id="email" name="email" placeholder="hello@ecotote.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$" required>
-                    </div>
-                    <div class="support-form-item">
-                        <label  class="support-form-title" for="comments">Повідомлення</label>
-                        <textarea class="support-form-input support-form-comment" id="comments" name="comments" placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
-                    </div>
-                    <button class="support-form-btn" type="submit">Надіслати</button>
-                </form>
+    <div class="container support-wrapper">
+        <div class="support-contents">
+            <div class="support-section-top">
+                <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+                <h3 class="support-text">Ми тут, щоб допомогти!</h3>
             </div>
-            <picture>
-                <source media="(min-width: 1440px)" srcset="../img/support-img/support-img-main.jpg 1x, ../img/support-img/support-img-main-2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="../img/support-img/support-img-tablet.jpg 1x, ../img/support-img/support-img-tablet-2x.jpg 2x">
-                <source media="(max-width: 767px)" srcset="../img/support-img/support-img-mobile.jpg 1x, ../img/support-img/support-img-mobile-2x.jpg 2x">
-                <img width="645" height="768" src="../img/support-img/support-img-mobile.jpg" alt="support-img" class="support-img">
-            </picture>
+            <form class="support-form">
+                <div class="support-form-item">
+                    <label class="support-form-title" for="username">Ім'я</label>
+                    <input class="support-form-input" type="text" id="username" name="username" placeholder="Іван" required minlength="5" maxlength="64">
+                </div>
+                <div class="support-form-item">
+                    <label class="support-form-title" for="email">Електронна пошта</label>
+                    <input class="support-form-input" type="email" id="email" name="email" placeholder="hello@ecotote.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$" required>
+                </div>
+                <div class="support-form-item">
+                    <label  class="support-form-title" for="comments">Повідомлення</label>
+                    <textarea class="support-form-input support-form-comment" id="comments" name="comments" placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
+                </div>
+                <button class="support-form-btn" type="submit">Надіслати</button>
+            </form>
         </div>
+        <picture>
+            <source media="(min-width: 1440px)" srcset="/img/support-img/support-img-main.jpg 1x, /img/support-img/support-img-main-2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/img/support-img/support-img-tablet.jpg 1x, /img/support-img/support-img-tablet-2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="/img/support-img/support-img-mobile.jpg 1x, /img/support-img/support-img-mobile-2x.jpg 2x">
+            <img width="645" height="768" src="/img/support-img/support-img-main.jpg" alt="Підтримка фото" class="support-img">
+        </picture>
     </div>
 </section>
