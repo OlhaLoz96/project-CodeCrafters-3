@@ -1,7 +1,8 @@
 .about {
     padding-top: 64px;
     padding-bottom: 64px;
-    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-mob.jpg);
+    background-color: #75d281;
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,7 @@
 
 @media screen and (min-resolution: 2x) {
     .about{
-        background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-mob-2x.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-mob-2x.jpg);
     }
 }
 
@@ -26,10 +27,9 @@ margin-bottom: 12px;
 
 .about-title {
 font-family: "Comfortaa", sans-serif;
-font-size: 36px;
 text-align: center;
 color: #ffffff;
-padding-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .about-text {
@@ -42,13 +42,13 @@ color: #fff;
     .about{
       padding-top: 80px;
     padding-bottom: 80px;  
-    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-tabl.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-tabl.jpg);
     max-width: 768px;
     }
 
     @media screen and (min-resolution: 2x) {
     .about{
-        background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-tabl-2x.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-tabl-2x.jpg);
     }
 }
 
@@ -62,7 +62,7 @@ color: #fff;
 
     .about-text{
         font-size: 18px;
-        width: 573px;
+        max-width: 573px;
         margin: 0 auto;
     }
 
@@ -72,20 +72,20 @@ color: #fff;
     .about{
         padding-top: 112px;
     padding-bottom: 94px;
-    background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-desktop.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-desktop.jpg);
     max-width: 1440px;
     }
 
     @media screen and (min-resolution: 2x) {
     .about{
-        background-image: linear-gradient(rgba(0,0,0,0.4)), url(../img/about.img/about-background-desktop-2x.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.4)), url(/img/about/about-background-desktop-2x.jpg);
     }
 }
 
    .about-title{
-        margin:0 auto;
+        margin: 0 auto 24px;
         font-size: 56px;
-        width: 629px;
+        max-width: 629px;
     }
    
     
