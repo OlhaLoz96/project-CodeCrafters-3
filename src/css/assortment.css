@@ -70,11 +70,8 @@
     flex-direction: column;
   }
 
-  .assortment-item-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  .assortment-item-info {
+    margin-bottom: auto;
   }
 }
 
@@ -89,5 +86,9 @@
 
   .assortment-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .assortment-item-info {
+    margin: auto 0;
   }
 }
