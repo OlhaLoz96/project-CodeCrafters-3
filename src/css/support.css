@@ -1,0 +1,145 @@
+support {
+    color: #030a06;
+}
+
+.support {
+    padding: 32px 0;
+}
+
+.support-title {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+}
+
+.support-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.support-form {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.support-form-item + .support-form-item {
+    margin-top: 24px;
+}
+
+.support-form-title + .support-form-input {
+    margin-top: 8px;
+}
+
+.support-form-input {
+    height: 42px;
+    width: 100%;
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 8px 12px;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-form-comment {
+    padding: 12px;
+    resize: none;
+    height: 180px;
+}
+
+.support-form-btn {
+    line-height: 160%;
+    color: #113916;
+    height: 50px;
+    margin-top: 24px;
+    border: 1px solid #113916;
+    border-radius: 6px;
+    padding: 12px 106px;
+    width: 288px;
+    background: transparent;
+    opacity: 0.6;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.support-form-btn:hover,
+.support-form-btn:focus {
+    color: #fff;
+    background: #113916;
+}
+
+.support-form-input:hover,
+.support-form-input:focus {
+    color: #030a06;
+    outline: none;
+}
+
+.support-form-input:hover:invalid,
+.support-form-input:focus:invalid {
+    color: #d64040;
+    border: 1px solid #d64040;
+    background: rgba(3, 10, 6, 0.05);
+}
+
+.support-img {
+    background-image: url('/img/support/support-img-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 428px;
+}
+
+@media (min-resolution: 2x){
+    .support-img {
+        background-image: url('/img/support/support-img-mobile-2x.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .support {
+        padding: 64px 0;
+    }
+
+    .support-title {
+        max-width: 468px;
+    }
+
+    .support-img {
+        background-image: url('/img/support/support-img-tablet.jpg');
+    }
+
+    @media (min-resolution: 2x){
+        .support-img {
+            background-image: url('/img/support/support-img-tablet-2x.jpg');
+        }
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .support-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    .support-title {
+        max-width: 644px;
+        font-size: 48px;
+    }
+
+    .support-img {
+        background-image: url('/img/support/support-img-main.jpg');
+        height: 768px;
+        max-width: 645px;
+    }
+
+    @media (min-resolution: 2x){
+        .support-img {
+            background-image: url('/img/support/support-img-main-2x.jpg');
+        }
+    }
+}
+
