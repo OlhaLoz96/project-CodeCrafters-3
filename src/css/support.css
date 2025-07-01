@@ -65,7 +65,7 @@
 
 .support-text-invalid {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 160%;
     color: #d64040;
     display: none;
@@ -73,12 +73,21 @@
 
 .support-form-btn:hover,
 .support-form-btn:focus {
-    color: #fff;
-    background: #113916;
+    background-color: #113916;
     opacity: 0.6;
 }
 
+.support-form-input:focus {
+    color: #030a06;
+    outline: none;
+}
+
+.support-form-input::placeholder {
+    color: rgba(3, 10, 6, 0.6);
+}
+
 .support-form-input:not(:placeholder-shown):invalid{
+    color: #d64040;
     border-color: #d64040;
 }
 
