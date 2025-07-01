@@ -13,10 +13,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-left: 20px;
 }
 .header-logo {
-  padding: 14px 0;
-  padding-left: 20px;
+  min-width: 84px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .burger {
   background-color: transparent;
@@ -104,7 +110,7 @@
   opacity: 0.6;
 }
 @media screen and (min-width: 768px) {
-  .header-logo {
+  .center-nav {
     padding-left: 32px;
   }
   .burger {
@@ -134,9 +140,11 @@
   .address {
     display: flex;
   }
+  .center-nav {
+    padding-left: 64px;
+  }
   .header-logo {
     margin-right: 175px;
-    padding-left: 64px;
   }
   .header-nav {
     gap: 32px;
