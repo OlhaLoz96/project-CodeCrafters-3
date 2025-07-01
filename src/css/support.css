@@ -125,6 +125,10 @@
         max-width: 468px;
     }
 
+    .support-form-btn {
+        width: 249px;
+    }
+
     .support-img {
         background-image: url('/img/support/support-img-tablet.jpg');
     }
@@ -134,10 +138,7 @@
             background-image: url('/img/support/support-img-tablet-2x.jpg');
         }
     }
-    
-    .support-form-btn {
-        width: 249px;
-    }
+
 }
 
 
@@ -152,6 +153,10 @@
         max-width: 644px;
         font-size: 48px;
     }
+    
+    .support-form-btn {
+        width: 198px;
+    }
 
     .support-img {
         background-image: url('/img/support/support-img-main.jpg');
@@ -163,10 +168,6 @@
         .support-img {
             background-image: url('/img/support/support-img-main-2x.jpg');
         }
-    }
-
-    .support-form-btn {
-        width: 198px;
     }
 }
 
