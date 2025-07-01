@@ -23,16 +23,14 @@
     />
 
     <script type="module" crossorigin src="/project-CodeCrafters-3/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CodeCrafters-3/assets/index-Dqu9QbNI.css">
+    <link rel="stylesheet" crossorigin href="/project-CodeCrafters-3/assets/index-C-nAbylt.css">
   </head>
   <body>
     <header class="header">
   <div class="container wrap-header">
     <nav class="center-nav">
       <a class="header-logo" href="/index.html">
-        <svg class="" width="82" height="31">
-          <use href="/project-CodeCrafters-3/assets/logo_header-QCOicZAA.svg"></use>
-        </svg>
+        <img src="/project-CodeCrafters-3/assets/logo_header-QCOicZAA.svg" alt="логотип" />
       </a>
       <ul class="header-nav">
         <li class="header-nav-item">
@@ -55,72 +53,86 @@
         </li>
       </ul>
     </nav>
-    <button data-menu-open class="button-menu" type="button">
-      <svg class="" width="22" height="16">
-        <use href="/project-CodeCrafters-3/assets/icons-B3aW88o-.svg#icon-burger"></use>
-      </svg>
-    </button>
+
     <address class="address">
       <ul class="header-address">
         <li class="header-address-item">
           <a class="address-item-link" href="mailto:hello@ecotote.com"
-            >hello@ecotote.com</a>
+            >hello@ecotote.com</a
+          >
         </li>
         <li class="header-address-item">
           <a class="address-item-link" href="tel:+380999091122"
-            >+38 (099) 909 11 22</a>
+            >+38 (099) 909 11 22</a
+          >
         </li>
       </ul>
     </address>
+
+    <button data-menu-open class="burger" type="button">
+      <svg class="burger-icon" width="32" height="32">
+        <use href="/project-CodeCrafters-3/assets/icons-B3aW88o-.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
   <!---------- mobal menu -->
-  <div class="mobal-menu-backdrop" data-menu> 
-      <div class="container wrap-menu">
-        <nav class="mobal-nav">
-          <a class="header-logo" href="/index.html">
-            <svg class="" width="82" height="31">
-              <use href="/project-CodeCrafters-3/assets/logo_header-QCOicZAA.svg"></use>
-            </svg>
-          </a>
-          <ul class="mobal-nav-list">
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#about">Про нас</a>
-            </li>
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#advantages">Переваги</a>
-            </li>
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#assortment">Асортимент</a>
-            </li>
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#gallery">Галерея</a>
-            </li>
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#feedbacks">Відгуки</a>
-            </li>
-            <li class="mobal-nav-item">
-              <a class="nav-item-link" data-menu-close href="#support">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <button data-menu-close class="button-menu button-close" type="button">
-          <svg class="" width="16" height="16">
-            <use href="/project-CodeCrafters-3/assets/icons-B3aW88o-.svg#icon-close"></use>
-          </svg>
-        </button>
-        <address class="mobal-address">
-          <ul class="mobile-adress-list">
-            <li class="mobal-address-item">
-              <a class="address-item-link" href="mailto:hello@ecotote.com"
-                >hello@ecotote.com</a>
-            </li>
-            <li class="mobal-address-item">
-              <a class="address-item-link" href="tel:+380999091122"
-                >+38 (099) 909 11 22</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+  <div class="mobal-menu-backdrop" data-menu>
+    <div class="container wrap-menu">
+      <nav class="mobal-nav">
+        <a class="header-logo menu-logo" href="/index.html">
+          <img src="/project-CodeCrafters-3/assets/logo_header-QCOicZAA.svg" alt="логотип" />
+        </a>
+        <ul class="mobal-nav-list">
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#about">Про нас</a>
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#advantages"
+              >Переваги</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#assortment"
+              >Асортимент</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#gallery">Галерея</a>
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#feedbacks"
+              >Відгуки</a
+            >
+          </li>
+          <li class="mobal-nav-item">
+            <a class="nav-item-link" data-menu-close href="#support"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <address class="mobal-address">
+        <ul class="mobile-adress-list">
+          <li class="mobal-address-item">
+            <a class="address-item-link" href="mailto:hello@ecotote.com"
+              >hello@ecotote.com</a
+            >
+          </li>
+          <li class="mobal-address-item">
+            <a class="address-item-link" href="tel:+380999091122"
+              >+38 (099) 909 11 22</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <button data-menu-close class="button-menu button-close" type="button">
+        <svg class="btn-close-icon" width="32" height="32">
+          <use href="/project-CodeCrafters-3/assets/icons-B3aW88o-.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
