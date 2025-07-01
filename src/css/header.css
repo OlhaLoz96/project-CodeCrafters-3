@@ -1,29 +1,30 @@
 .header {
   background-color: #75d281;
-  margin: 0;
 }
+
 .wrap-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 12px 0 20px;
 }
-.center-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+.header-logo {
+  display: block;
   padding-bottom: 14px;
   padding-top: 14px;
-  padding-left: 20px;
 }
-.header-logo {
-  min-width: 84px;
-  min-height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.header-logo img {
+  width: 84px;
+  height: 36px;
 }
+
+.header-nav,
+.address {
+  display: none;
+}
+
 .burger {
   background-color: transparent;
   display: flex;
@@ -33,21 +34,76 @@
   border: none;
   width: 48px;
   height: 48px;
-  padding: 8px 0;
-  padding-right: 12px;
+  padding: 0;
 }
-.header-nav,
-.address {
-  display: none;
+
+@media screen and (min-width: 768px) {
+  .wrap-header {
+    padding: 0 16px 0 32px;
+  }
 }
-/* -----------mobal menu -----------*/
+
+@media screen and (min-width: 1440px) {
+  .wrap-header {
+    padding: 0 64px;
+  }
+
+  .center-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-logo {
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-right: 175px;
+  }
+
+  .header-logo img {
+    width: 106px;
+    height: 45px;
+  }
+
+  .header-nav,
+  .address {
+    display: flex;
+  }
+
+  .burger,
+  .mobal-menu-backdrop {
+    display: none;
+  }
+
+  .header-nav {
+    gap: 32px;
+  }
+
+  .nav-item-link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .header-address {
+    display: flex;
+    gap: 16px;
+  }
+
+  .address-item-link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+/* -----------mobile menu -----------*/
 .mobal-menu-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  max-height: 668px;
   background-color: #75d281;
   opacity: 0;
   visibility: hidden;
@@ -62,30 +118,50 @@
 }
 .wrap-menu {
   position: relative;
+  padding-bottom: 92px;
   display: flex;
   flex-direction: column;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 .button-close {
+  padding: 0;
   position: absolute;
+  top: 8px;
+  right: 12px;
   width: 48px;
   height: 48px;
   border: none;
   background-color: transparent;
-  right: 12px;
-  top: 8px;
-  padding: 0;
 }
+
+.btn-close-icon {
+  fill: #030a06;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close-icon:hover,
+.btn-close-icon:focus {
+  fill: #113916;
+  opacity: 0.6;
+}
+
 .mobal-nav {
+  padding-left: 4px;
+  margin-bottom: auto;
   display: flex;
   flex-direction: column;
 }
+
+.menu-logo {
+  width: 84px;
+}
+
 .mobal-nav-list {
-  padding: 32px 20px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 32px;
 }
 .nav-item-link,
 .address-item-link {
@@ -93,8 +169,6 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-adress-list {
-  padding-top: 32px;
-  padding-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -109,58 +183,18 @@
   color: #113916;
   opacity: 0.6;
 }
+
 @media screen and (min-width: 768px) {
-  .center-nav {
+  .wrap-menu {
     padding-left: 32px;
+    padding-bottom: 128px;
   }
-  .burger {
-    padding-right: 16px;
+
+  .mobal-nav {
+    padding-left: 0px;
   }
+
   .button-close {
     right: 16px;
-  }
-  .mobal-nav-list {
-    padding: 32px;
-    margin: 0;
-  }
-  .mobile-adress-list {
-    padding: 32px;
-  }
-  .burger-icon {
-    width: 24px;
-    height: 24px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .burger,
-  .mobal-menu-backdrop {
-    display: none;
-  }
-  .header-nav,
-  .address {
-    display: flex;
-  }
-  .center-nav {
-    padding-left: 64px;
-  }
-  .header-logo {
-    margin-right: 175px;
-  }
-  .header-nav {
-    gap: 32px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-  }
-  .address {
-    margin-left: auto;
-  }
-  .header-address {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 16px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-right: 64px;
   }
 }
