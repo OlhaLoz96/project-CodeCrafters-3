@@ -1,54 +1,70 @@
+/* Styles for Mobile devices */
+.container {
+  /* min-width: 320px;
+  max-width: 375px; */
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* Styles for Tablet devices */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/* Styles for Desktop devices */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+}
+
 .header {
   background-color: #75d281;
+  margin: 0;
 }
 .wrap-header {
   display: flex;
-  height: 64px;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
 }
 .center-nav {
-  padding-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
-.address-item-link:hover,
-.address-item-link:focus,
-.nav-item-link:hover,
-.nav-item-link:focus { 
-  color:#113916;
-  opacity: 0.6;
+.header-logo {
+  padding: 14px 0;
+  padding-left: 20px;
 }
-
-.button-menu {
+.burger {
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   outline: none;
   border: none;
+  padding: 8px 0;
+  padding-right: 12px;
 }
-
-.header-nav {
-  padding-left: 185px;
-  display: none;
-  gap: 32px;
-}
-
-/* --------header address--------- */
+.header-nav,
 .address {
   display: none;
-  font-style: normal;
 }
 /* -----------mobal menu -----------*/
-
 .mobal-menu-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:  #75d281;
+  max-height: 668px;
+  background-color: #75d281;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -60,78 +76,102 @@
   visibility: visible;
   pointer-events: auto;
 }
-
 .wrap-menu {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
-  padding-left: 20px;
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.button-close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  right: 12px;
+  top: 8px;
+  padding: 0;
+}
 .mobal-nav {
   display: flex;
   flex-direction: column;
-  width: 30%;
 }
-
 .mobal-nav-list {
-  padding-top: 50px;
-  padding-bottom: 64px;
+  padding: 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 32px;
 }
 .nav-item-link,
-.address-item-link{
-  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.address-item-link {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-adress-list {
   padding-top: 32px;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
-.button-close {
-  position: absolute;
-  right: 17px;
-  top: 22px;
+.address-item-link {
+  font-style: normal;
 }
-
-/* ------------------- meda -------------- */
-
-@media (min-width: 768px) {
-  .wrap-menu {
+.address-item-link:hover,
+.address-item-link:focus,
+.nav-item-link:hover,
+.nav-item-link:focus {
+  color: #113916;
+  opacity: 0.6;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
     padding-left: 32px;
   }
-  .mobal-nav-list {
-    padding-bottom: 32px;
+  .burger {
+    padding-right: 16px;
   }
-  .mobal-nav {
-  width: 15%;
-}
-.button-close {
-  right: 30px;
-}
-}
+  .button-close {
+    right: 16px;
+  }
 
-@media (min-width: 1440px) {
-  .header-nav {
+  .mobal-nav-list {
+    padding: 32px;
+    margin: 0;
+  }
+  .mobile-adress-list {
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .burger,
+  .mobal-menu-backdrop {
+    display: none;
+  }
+  .header-nav,
+  .address {
     display: flex;
   }
+  .header-logo {
+    margin-right: 175px;
+    padding-left: 64px;
+  }
+  .header-nav {
+    gap: 32px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
   .address {
-    display: block;
+    margin-left: auto;
   }
   .header-address {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 16px;
-  }
-  .button-menu {
-    display: none;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-right: 64px;
   }
 }
