@@ -72,13 +72,16 @@
   padding-bottom: 16px;
 }
 
+.footer-address {
+  margin-bottom: 24px;
+}
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 24px;
 }
 
 .item-contacts {
@@ -137,10 +140,13 @@
     padding-bottom: 0px;
   }
 
+  .footer-address {
+    margin-bottom: 16px;
+  }
+
   .footer-contacts {
     flex-direction: row;
     gap: 32px;
-    margin-bottom: 16px;
   }
 }
 
